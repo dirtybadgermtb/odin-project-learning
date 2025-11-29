@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  font-family: Roboto, sans-serif;
+ 
+}
+
+img {
+  width: 600px;
+}
+
+button {
+  font-family: Roboto, sans-serif;
+  border: none;
+  border-radius: 8px;
+  background: #eee;
+}
+
+input {
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 8px 24px;
+  width: 400px;
+  margin-bottom: 10px; /*changed from 16px*/
+}
+
+/*solution*/
+body {
+  display: flex;
+  flex-direction: column; 
+}
+button {
+  padding: 8px 16px
+ }
+input {
+  border:2px solid lightgray;
+  margin-top: 10px;
+}
+
+ul {
+  list-style-type: none; /*removes bullets in unordered lists*/
+}
+a {
+  text-decoration: none; /*removes underline in links*/
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap:10px;
+  margin: 50px;
+  flex: 1 0 auto; /*left off here: https://daily-dev-tips.com/posts/making-a-footer-stick-to-the-bottom-with-css/ */
+  }
+.header, 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1px 10px 1px 10px; /*top right bottom left*/
+  /*
+    padding-top: 1px;
+    padding-right: 10px;
+    padding-bottom: 1px;
+    padding-left: 10px;
+    */
+}
+.footer {
+  background-color: #eeeeee;
+}
+.left-links, .right-links {
+  display: flex;
+  gap: 10px;
+}
